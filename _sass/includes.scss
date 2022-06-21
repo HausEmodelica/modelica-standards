@@ -1,0 +1,28 @@
+@import "partials/global/_boxes";
+@import "partials/global/_buttons";
+@import "partials/global/_colors";
+@import "partials/global/_embededContent";
+@import "partials/global/_general";
+@import "partials/global/_grid";
+@import "partials/global/_spacing";
+@import "partials/global/_typography";
+@import "partials/global/_utilities";
+
+@import "header/_navigation";
+@import "header/_logo";
+@import "header/_header";
+
+@import "main/_main";
+
+@import "content/newsAndEvents/_listElement";
+@import "content/newsAndEvents/_eventList";
+@import "content/newsAndEvents/_newsList";
+@import "content/newsAndEvents/_newsDetail";
+@import "content/newsAndEvents/_eventsDetail";
+
+@import "content/_benefits";
+@import "content/_level";
+@import "content/_tools";
+
+@import "footer/_footer";
+@import "footer/_navigation";

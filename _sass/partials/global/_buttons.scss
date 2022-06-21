@@ -1,0 +1,14 @@
+.is--active{
+  color: $theme-red-c8;
+}
+.btn{
+  &:hover{
+    color: $theme-red-c4;
+  }
+}
+.btn-primary{
+  &:hover{
+    color:$white;
+  }
+
+}

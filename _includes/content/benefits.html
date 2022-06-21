@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="col-12 col-lg-6 col-xxl-4 mb-8 mb-lg-0">
+        <div class="card has--background-medium px-2 px-sm-5 pt-7 pb-7 pb-sm-9">
+            <div class="row">
+                <div class="col-12 vel--title mb-3">
+                    <h3>Modelica benefits</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 vel--info mb-3">
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatemExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 vel--link">
+                    <a href="{{item.link}}" class="btn text-decoration-underline">More about our benefits</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6 col-xxl-8 vel--quotes">
+        <div class="row mb-6">
+            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-none d-xxl-block col-xxl-1 vel--spacer"></div>
+            <div class="col-8 offset-2 offset-md-2 offset-lg-0 col-md-4 col-xxl-3 ps-xxl-5 vel--quotes-image me-2">
+                <figure>
+                    <picture>
+                        <source srcset="{{site.url}}/assets/images/images/example-quote-person-a--223x223.jpg">
+                        <img src="{{site.url}}/assets/images/images/example-quote-person-a--223x223.jpg" class="rounded-circle">
+                    </picture>
+                </figure>
+            </div>
+            <div class="col-10 offset-1 offset-md-0 col-md-5 p-2 vel--quotes-text has--white-font">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                <p>-- Lorem ipsum dolor sit amet</p></div>
+        </div>
+        <div class="row">
+            <div class="d-none d-sm-none d-md-none d-lg-none d-xl-none d-xxl-block col-xxl-2 vel--spacer me-6"></div>
+            <div class="col-8 offset-2 col-md-4 col-xxl-3 offset-md-0 offset-lg-1 offset-xxl-0 vel--quotes-image ps-xxl-5 me-1">
+                <figure>
+                    <picture>
+                        <source srcset="{{site.url}}/assets/images/images/example-quote-person-b--223x223.jpg">
+                        <img src="{{site.url}}/assets/images/images/example-quote-person-b--223x223.jpg" class="rounded-circle">
+                    </picture>
+                </figure>
+            </div>
+            <div class="col-10 offset-1 offset-xxl-0 col-md-5 vel--quotes-text p-2 has--white-font">
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                <p>-- Lorem ipsum dolor sit amet</p></div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row vel--use-cases mt-10">
+    {% for item in site.data.useCases %}
+    <div class="col-12 col-md-6 col-lg-4 my-1 my-lg-0">
+        <div class="card has--background-dark has--light-border has--white-font has--white-headline py-7 px-6 h-100">
+            <div class="card-title text-center mb-2"><h3>{{item.title}}</h3></div>
+            <div class="card-text mb-2"><p>{{item.info}}</p></div>
+            <div class="col-12 vel--link mt-1">
+                <a class="btn text-decoration-underline has--white-font" href="{{item.link}}">Read more</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

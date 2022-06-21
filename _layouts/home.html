@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jqt8mfo.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+    {% if jekyll.environment == "production" %}
+    <script src="my-analytics-script.js"></script>
+    {% endif %}
+    <script src="{{site.url}}/assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="{{site.url}}/assets/js/main.js"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        {% include header/backToParentNavigation.html %}
+    </div>
+    <nav class="navbar navbar-expand-lg is--container-medium">
+        <div class="container">
+            {% include header/navigation.html %}
+        </div>
+    </nav>
+    <div class="container-fluid p-0">
+        {% include header/header.html %}
+    </div>
+</header>
+<main>
+    <div class="vel--section news-and-events has--background-light pt-7 pb-10">
+        <div class="container is--container-small px-2">
+            {% include content/newsAndEvents.html %}
+        </div>
+    </div>
+    <div class="vel--section level has--background-dark py-10">
+        <div class="container is--container-medium">
+            {% include content/level.html %}
+        </div>
+    </div>
+    <div class="vel--section tools py-10">
+        <div class="container is--container-medium">
+            {% include content/tools.html %}
+        </div>
+    </div>
+    <div class="vel--section benefits has--background-dark  py-10">
+        <div class="container is--container-medium">
+            {% include content/benefits.html %}
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container is--container-medium pt-7 pb-5 mt-1">
+        {% include footer/footer.html %}
+        {% include footer/navigation.html %}
+    </div>
+</footer>
+</body>
+</html>

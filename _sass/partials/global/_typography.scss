@@ -1,0 +1,105 @@
+.has--red-headline{
+  h2,h6 {
+    color: $theme-red-c8;
+  }
+}
+
+.has--white-headline {
+  h2, h3, h4, h5 {
+    color: $white;
+  }
+}
+
+.has--white-font {
+  color: $white;
+}
+.has--lightgrey-font{
+  color: $theme-grey-80 !important;
+}
+.form-floating > label {
+  height: auto;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-lg;
+}
+.has--two-columns{
+  column-count: 2;
+  column-gap: 2rem;
+  @include media-breakpoint-down(md) {
+    column-count: 1;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  h1, .h1 {
+    @include font-size($h1-font-size-sm);
+  }
+  h2, .h2 {
+    @include font-size($h2-font-size-sm);
+  }
+  h3, .h3 {
+    @include font-size($h3-font-size-sm);
+  }
+  h4, .h4 {
+    @include font-size($h4-font-size-sm);
+  }
+  h5, .h5 {
+    @include font-size($h5-font-size-sm);
+  }
+  h6, .h6 {
+    @include font-size($h6-font-size-sm);
+  }
+  p, .nav-link {
+    @include font-size($font-size-sm);
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+  h1, .h1 {
+    @include font-size($h1-font-size-lg);
+  }
+  h2, .h2 {
+    @include font-size($h2-font-size-lg);
+  }
+  h3, .h3 {
+    @include font-size($h3-font-size-lg);
+  }
+  h4, .h4 {
+    @include font-size($h4-font-size-lg);
+  }
+  h5, .h5 {
+    @include font-size($h5-font-size-lg);
+  }
+  h6, .h6 {
+    @include font-size($h6-font-size-lg);
+  }
+  p, .nav-link {
+    @include font-size($font-size-lg);
+  }
+}
+
+@include media-breakpoint-up(xxxl) {
+  h1, .h1 {
+    @include font-size($h1-font-size-xxxl);
+  }
+  h2, .h2 {
+    @include font-size($h2-font-size-xxxl);
+  }
+  h3, .h3 {
+    @include font-size($h3-font-size-xxxl);
+  }
+  h4, .h4 {
+    @include font-size($h4-font-size-xxxl);
+  }
+  h5, .h5 {
+    @include font-size($h5-font-size-xxxl);
+  }
+  h6, .h6 {
+    @include font-size($h6-font-size-xxxl);
+  }
+  p, .nav-link {
+    @include font-size($font-size-xxxl);
+  }
+
+}
+

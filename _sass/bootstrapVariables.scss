@@ -1,0 +1,406 @@
+// ==================================================================
+// Bootstrap variables
+// bootstrapVariables.scss
+// ==================================================================
+
+/* ------------------- CUSTOM VARIABLES ------------------- */
+
+//-----------------------------------------------
+//
+// veljus vars
+//
+//-----------------------------------------------
+
+// font-size
+
+$font-size-md: 1.125rem !default;
+$font-size-xl: 1.5rem !default;
+$font-size-vm: 1.375rem !default;
+$font-size-caption: 1rem !default;
+
+// color-sets
+
+// black and white
+$black: #000000;
+$white: #FFFFFF;
+
+// Greyscale
+$theme-grey-53: #53606A;
+$theme-grey-94: #94A0A7;
+$theme-grey-33: #333F48;
+$theme-grey-7c: #7C878E;
+$theme-grey-1d: #1D1B1B;
+$theme-grey-7c5c: #7C878E5C;
+$theme-grey-34: #343F48;
+$theme-grey-dc: #DCDFE2;
+$theme-grey-0029: #00000029;
+$theme-grey-54: #54606A;
+$theme-grey-7c65: #7C878E65;
+$theme-grey-32: #323E47;
+$theme-grey-f0: #F0F0F0;
+$theme-grey-70: #707070;
+$theme-grey-18: #182632;
+$theme-grey-0039: #00000039;
+$theme-grey-3338: #333F4838;
+$theme-grey-80: #808A94;
+
+// reds
+
+$theme-red-ba: #BA0023;
+$theme-red-c4: #C41933;
+$theme-red-c8: #C8102E;
+$theme-red-73: #73272D;
+$theme-red-cb: #CB001B;
+$theme-red-cb5: #CB051B;
+$theme-red-c6: #C61633;
+
+// blues
+$theme-blue-57: #578CA9;
+$theme-blue-36: #36445A;
+$theme-blue-1b80: #1B5A8F80;
+
+
+// transition-helper
+$transition-color: color 0.3s;
+$transition-all: all 0.5s;
+$transition-all-fast: all 0.5s;
+$transition-transform: transform 0.5s;
+$transition-transform-fast: transform 0.3s;
+
+// veljus spacing steps (for margins and paddings etc.)
+$vel-space-1: 0.5;
+$vel-space-2: 1;
+$vel-space-3: 2.19;
+$vel-space-4: 2.5;
+$vel-space-5: 3.13;
+$vel-space-6: 3.75;
+$vel-space-7: 4.38;
+$vel-space-8: 5;
+$vel-space-9: 6.25;
+$vel-space-10: 7.5;
+$vel-space-11: 10.63;
+
+// padding-sets
+$theme-padding-1: $vel-space-1 + rem;
+$theme-padding-2: $vel-space-2 + rem;
+$theme-padding-3: $vel-space-3 + rem;
+$theme-padding-4: $vel-space-4 + rem;
+$theme-padding-5: $vel-space-5 + rem;
+$theme-padding-6: $vel-space-6 + rem;
+$theme-padding-7: $vel-space-7 + rem;
+$theme-padding-8: $vel-space-8 + rem;
+$theme-padding-9: $vel-space-9 + rem;
+$theme-padding-10: $vel-space-10 + rem;
+$theme-padding-11: $vel-space-11 + rem;
+
+// margin-sets
+$theme-margin-1: $vel-space-1 + rem;
+$theme-margin-2: $vel-space-2 + rem;
+$theme-margin-3: $vel-space-3 + rem;
+$theme-margin-4: $vel-space-4 + rem;
+$theme-margin-5: $vel-space-5 + rem;
+$theme-margin-6: $vel-space-6 + rem;
+$theme-margin-7: $vel-space-7 + rem;
+$theme-margin-8: $vel-space-8 + rem;
+$theme-margin-9: $vel-space-9 + rem;
+$theme-margin-10: $vel-space-10 + rem;
+$theme-margin-11: $vel-space-11 + rem;
+
+// border-radius
+$border-radius-std: 15px;
+
+// custom container max-width
+
+/* ------------------- OVERRIDES BOOTSTRAP VARIABLES ------------------- */
+
+//-----------------------------------------------
+//
+// Colors
+//
+//-----------------------------------------------
+
+$theme-primary: $theme-red-c8 !default;
+$theme-secondary: $theme-grey-33 !default;
+$theme-tertiary: $theme-grey-dc !default;
+$theme-accent: $white !default;
+$theme-text: $theme-grey-33 !default;
+
+$primary: $theme-primary !default;
+$secondary: $theme-secondary !default;
+$tertiary: $theme-tertiary !default;
+$accent: $theme-accent !default;
+$headings-color: $theme-text !default;
+$body-color: $theme-text !default;
+
+// focus shadow color
+$component-active-bg: $tertiary !default;
+
+//-----------------------------------------------
+//
+// flexbox
+//
+//-----------------------------------------------
+
+@mixin flex-rules($justify-content, $align-content, $align-items, $align-self, $flex-direction) {
+  display: flex;
+  justify-content: $justify-content;
+  align-content: $align-content;
+  align-items: $align-items;
+  align-self: $align-self;
+  flex-direction: $flex-direction;
+}
+
+
+//-----------------------------------------------
+//
+// border
+//
+//-----------------------------------------------
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px,
+        xxxl: 1660px,
+) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px,
+        xxxl: 1656px
+) !default;
+
+$grid-gutter-width: 1rem !default;
+
+//-----------------------------------------------
+//
+// border
+//
+//-----------------------------------------------
+
+$border-radius: 4px !default;
+$border-radius-sm: 4px !default;
+$border-radius-lg: 4px !default;
+$border-radius-pill: 0 !default;
+
+
+//-----------------------------------------------
+//
+// spacing
+//
+//-----------------------------------------------
+
+$spacer: 1rem !default;
+$spacers: (
+        0: 0,
+        1: $spacer * $vel-space-1,
+        2: $spacer * $vel-space-2,
+        3: $spacer * $vel-space-3,
+        4: $spacer * $vel-space-4,
+        5: $spacer * $vel-space-5,
+        6: $spacer * $vel-space-6,
+        7: $spacer * $vel-space-7,
+        8: $spacer * $vel-space-8,
+        9: $spacer * $vel-space-9,
+        10: $spacer * $vel-space-10,
+        11: $spacer * $vel-space-11,
+) !default;
+$enable-negative-margins: true;
+//-----------------------------------------------
+//
+// typography
+//
+//-----------------------------------------------
+
+$font-family-sans-serif: europa, Arial, sans-serif !default;
+//$font-size-root:                 1rem !default;
+$font-size-base: 1.13rem !default;
+$font-size-sm: $font-size-base * 1 !default;
+$font-size-lg: $font-size-base * 0.88 !default;
+$font-size-xxxl: $font-size-base * 1.06 !default;
+
+
+
+$font-weight-lighter: 300 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 900 !default;
+
+$font-weight-base: $font-weight-light !default;
+$line-height-base: 1.5 !default;
+
+$paragraph-margin-bottom: 0 !default;
+
+$h1-font-size: $font-size-base * 3 !default;
+$h2-font-size: $font-size-base * 3 !default;
+$h3-font-size: $font-size-base * 2.38 !default;
+$h4-font-size: $font-size-base * 2 !default;
+$h5-font-size: $font-size-base * 1.5 !default;
+$h6-font-size: $font-size-base * 1.38 !default;
+
+$h1-font-size-sm: $font-size-sm * 3 !default;
+$h1-font-size-lg: $font-size-lg * 3 !default;
+$h1-font-size-xxxl: $font-size-xxxl * 3 !default;
+
+$h2-font-size-sm: $font-size-sm * 3 !default;
+$h2-font-size-lg: $font-size-lg * 3 !default;
+$h2-font-size-xxxl: $font-size-xxxl * 3 !default;
+
+$h3-font-size-sm: $font-size-sm * 2.38 !default;
+$h3-font-size-lg: $font-size-lg * 2.38 !default;
+$h3-font-size-xxxl: $font-size-xxxl * 2.38 !default;
+
+$h4-font-size-sm: $font-size-sm * 2 !default;
+$h4-font-size-lg: $font-size-lg * 2 !default;
+$h4-font-size-xxxl: $font-size-xxxl * 2 !default;
+
+$h5-font-size-sm: $font-size-sm * 1.5 !default;
+$h5-font-size-lg: $font-size-lg * 1.5 !default;
+$h5-font-size-xxxl: $font-size-xxxl * 1.5 !default;
+
+$h6-font-size-sm: $font-size-sm * 1.38 !default;
+$h6-font-size-lg: $font-size-lg * 1.38 !default;
+$h6-font-size-xxxl: $font-size-xxxl * 1.38 !default;
+
+$headings-margin-bottom: 0 !default;
+$headings-font-family: europa, Arial, sans-serif !default;
+$headings-font-weight: $font-weight-bold !default;
+$headings-line-height: 1.2 !default;
+$headings-color: null !default;
+
+$display1-size: $font-size-base * 5.625 !default;
+$display2-size: $font-size-base * 4 !default;
+$display3-size: $font-size-base * 3.5 !default;
+$display4-size: $font-size-base * 3 !default;
+
+$display1-size-sm: $font-size-base * 3.125 !default;
+$display1-size-md: $font-size-base * 4.375 !default;
+
+$display1-weight: $font-weight-bolder !default;
+$display2-weight: 400 !default;
+$display3-weight: 400 !default;
+$display4-weight: 400 !default;
+$display-line-height: $headings-line-height !default;
+$display-margin-bottom: 0.45em !default;
+
+$lead-font-size: $font-size-base * 1.5625 !default;
+$lead-font-weight: 300 !default;
+$lead-black-font-weight: 900 !default;
+
+$small-font-size: 80% !default;
+
+//-----------------------------------------------
+//
+// Style anchor elements
+//
+//-----------------------------------------------
+
+$link-color: $secondary !default;
+$link-decoration: none !default;
+$link-shade-percentage: 20% !default;
+$link-hover-color: shift-color($link-color, $link-shade-percentage)!default;
+$link-hover-decoration: null !default;
+
+
+//-----------------------------------------------
+//
+// hr
+//
+//-----------------------------------------------
+
+$hr-margin-y: 0 !default;
+$hr-color: $white !default;
+$hr-border-color: $white !default; // Allows for inherited colors
+$hr-opacity: 1 !default;
+$hr-border-width: 1px !default;
+
+//-----------------------------------------------
+//
+// forms & buttons
+//
+//-----------------------------------------------
+
+$form-text-font-size: $font-size-md !default;
+$form-text-color: $black !default;
+
+// input & buttons share
+
+$input-btn-border-width: 1px !default;
+
+// buttons specific
+
+$btn-padding-y: 0.75rem !default;
+$btn-padding-x: 0 !default;
+$btn-font-size: 1rem !default;
+$btn-line-height: 1.15 !default;
+$btn-line-height-sm: 1.1 !default;
+
+$btn-padding-y-sm: 0.75rem !default;
+$btn-padding-x-sm: 0 !default;
+
+$btn-font-size-lg: $font-size-lg !default;
+$btn-font-weight: $font-weight-bold !default;
+
+$btn-border-width: $input-btn-border-width !default;
+$btn-link-color:              $white !default;
+$btn-link-hover-color:        $white !default;
+// form fields specific
+
+$form-label-margin-bottom: 1.25rem !default;
+$form-label-font-size: $h5-font-size !default;
+$form-label-font-weight: $font-weight-bold !default;
+$form-label-font-family: $headings-font-family !default;
+$form-label-color: $theme-text !default;
+
+$input-padding-y: 0.75rem !default;
+$input-padding-x: 0 !default;
+$input-font-size: $font-size-md !default;
+$input-line-height: 1.125 !default;
+
+$input-border-radius: 0 !default;
+$input-border-color: $theme-grey-33 !default;
+$input-focus-border-color: $theme-grey-7c5c;
+
+$input-placeholder-color: #989898 !default;
+
+// cta
+
+$cta-height: 70px;
+
+//-----------------------------------------------
+//
+// utilities
+//
+//-----------------------------------------------
+
+$overflows: auto, hidden, visible, scroll !default;
+
+//-----------------------------------------------
+//
+// navbar and header
+//
+//-----------------------------------------------
+
+$navbar-height-sm: 80px;
+$navbar-height-xl: 99px;
+
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+
+$navbar-brand-padding-y: 0;
+
+$nav-link-padding-y: 0.625rem;
+$nav-link-padding-x: 0.625rem;
+
+$hamburger-box-width: 2.25rem;
+$hamburger-stroke-distance: -10px;
+
+

@@ -1,0 +1,15 @@
+.has--lightred-border{
+  border: 1px solid rgba($theme-red-c4, 0.2);
+}
+.has--dark-border{
+  border: 1px solid rgba($theme-grey-34, 0.1);
+}
+.has--light-border{
+  border: 1px solid $theme-grey-53;
+}
+.has--rounded-border{
+  border-radius: $border-radius;
+}
+.has--box-shadow{
+  box-shadow: 0px 0px 50px $theme-grey-0029;
+}

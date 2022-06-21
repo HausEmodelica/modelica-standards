@@ -1,0 +1,23 @@
+.news-and-events {
+
+  .vel--info {
+    @include flex-rules(center, flex-start, flex-start, normal, column);
+    h6 {
+      font-weight: $font-weight-normal;
+      p{
+        font-size: inherit;
+        font-weight: inherit;
+      }
+    }
+  }
+  .vel--icon{
+    @include flex-rules(flex-end, normal, flex-end, normal, row);
+    &::after {
+      content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Ebene_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 16'%3E%3Cpath id='Pfad_13' d='M1.147,1.047l6.966,6.872L1.147,14.953' fill='none' stroke='%23c61633' stroke-width='2'/%3E%3C/svg%3E");;
+      width: 14px;
+    }
+  }
+  .vel--community{
+    @include flex-rules(center, center, center, normal, column);
+  }
+}

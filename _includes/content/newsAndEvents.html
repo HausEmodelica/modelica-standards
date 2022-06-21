@@ -1,0 +1,140 @@
+<div class="row">
+    <div class="col-12 vel--title has--red-headline text-center mb-7">
+        <h2>News and Events</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-6 vel--news-events h-100 mb-md-5 mb-lg-0">
+        {% for releases in site.categories.releases limit:1 reversed %}
+        <div class="row vel--entry has--lightred-border mb-3 mb-sm-1 me-lg-4 pe-md-1 h-100">
+            <div class="col-12 col-sm-4 vel--image p-0">
+                <div class="ratio ratio-1x1 overflow-hidden">
+                    <figure>
+                        <picture>
+                            <source srcset="{{site.url}}{{releases.image}}">
+                            <img src="{{site.url}}{{releases.image}}" class="h-100">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-10 col-sm-7 vel--info ps-3 pe-1 py-2">
+                <div class="row">
+                    <div class="col-12">
+                        <p>{{releases.date | date: "%b %-d, %Y" }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h6>Latest Release</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 has--red-headline">
+                        <a href="{{site.url}}{{ post.url }}"><h6>{{releases.excerpt}}</h6></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1 vel--icon pb-1"></div>
+        </div>
+        {% endfor %}
+
+        {% for events in site.categories.events limit:1 reversed %}
+        <div class="row vel--entry has--lightred-border mb-3 mb-sm-1 me-lg-4 pe-md-1 h-100">
+            <div class="col-12 col-sm-4 vel--image p-0">
+                <div class="ratio ratio-1x1 overflow-hidden">
+                    <figure>
+                        <picture>
+                            <source srcset="{{site.url}}{{events.image}}">
+                            <img src="{{site.url}}{{events.image}}" class="h-100">
+                        </picture>
+                    </figure>
+                </div>
+
+            </div>
+            <div class="col-10 col-sm-7 vel--info ps-3 pe-1 py-2">
+                <div class="row">
+                    <div class="col-12">
+                        <p>{{events.date | date: "%b %-d, %Y" }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 has--red-headline">
+                        <h6>Latest Release</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="{{site.url}}{{ post.url }}"><h6>{{events.excerpt}}</h6></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1 vel--icon pb-1"></div>
+        </div>
+        {% endfor %}
+
+        {% for news in site.categories.news limit:1 reversed %}
+        <div class="row vel--entry has--lightred-border mb-3 mb-sm-1 mb-lg-0 me-lg-4 pe-md-1 h-100">
+            <div class="col-12 col-sm-4 vel--image p-0">
+                <div class="ratio ratio-1x1 overflow-hidden">
+                    <figure>
+                        <picture>
+                            <source srcset="{{site.url}}{{news.image}}">
+                            <img src="{{site.url}}{{news.image}}" class="h-100">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-10 col-sm-7 vel--info ps-3 pe-1 py-2">
+                <div class="row">
+                    <div class="col-12">
+                        <p>{{news.date | date: "%b %-d, %Y" }}</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 has--red-headline">
+                        <h6>Latest Release</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="{{site.url}}{{ post.url }}"><h6>{{news.excerpt}}</h6></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-1 vel--icon pb-1"></div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+    <div class="col-12 col-lg-6 vel--community has--background-dark">
+        <div class="row">
+            <div class="col-10 m-auto h-100">
+                <div class="row">
+                    <div class="col-12 has--white-headline has--white-font text-center h-100 mb-2 ms-lg-3">
+                        <h3>Community & User Groups</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 has--white-headline has--white-font text-center h-100 mb-2">
+                        <a href="#" class="text-decoration-underline has--white-font"><strong>Read more</strong></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 has--white-headline has--white-font h-100">
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id
+                            est laborum.
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

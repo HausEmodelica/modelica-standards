@@ -1,0 +1,31 @@
+header {
+  nav {
+    @include media-breakpoint-down(lg) {
+      .navbar-nav {
+        align-items: flex-end;
+      }
+
+      .navbar-toggler-icon {
+        width: 2.5rem;
+        height: 2rem;
+      }
+    }
+
+
+    .collapse.show {
+      position: absolute;
+      width: 100%;
+      top: 4.75rem;
+      left: 0;
+      background: $white;
+      @include media-breakpoint-up(md) {
+        position: absolute;
+        width: 100%;
+        top: 4.75rem;
+        left: 0;
+        background: $white;
+      }
+    }
+  }
+}
+

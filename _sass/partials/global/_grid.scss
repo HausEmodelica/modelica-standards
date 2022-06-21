@@ -1,0 +1,33 @@
+.container {
+  &.is--container-wide {
+    max-width: 1920px;
+  }
+  &.is--container-medium {
+    @include media-breakpoint-up(xl) {
+      max-width: 920px;
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width: 1120px;
+    }
+    @include media-breakpoint-up(xxxl) {
+      max-width: 1640px;
+    }
+  }
+  &.is--container-small {
+    @include media-breakpoint-up(xl) {
+      max-width: 840px;
+    }
+    @include media-breakpoint-up(xxxl) {
+      max-width: 1360px;
+    }
+  }
+}
+
+.vel--no-gutter {
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+}

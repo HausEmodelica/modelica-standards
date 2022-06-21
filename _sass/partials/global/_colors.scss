@@ -1,0 +1,15 @@
+header, main, .has--background-white{
+  background: $white;
+}
+.has--background-light{
+  background: $theme-grey-f0;
+}
+.has--background-medium{
+   background: $theme-grey-dc;
+ }
+footer, .has--background-dark{
+  background: $theme-grey-33;
+}
+.has--background-red{
+  background:$theme-red-c8;
+}

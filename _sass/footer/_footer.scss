@@ -1,0 +1,24 @@
+/* ------------------- FOOTER ------------------- */
+footer {
+  .vel--footer-image-item{
+    @include flex-rules(space-between, center, center, center, row);
+    &::after{
+      content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Ebene_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 32'%3E%3Cpath id='Pfad_13' d='M27.049,.823l15.21,15-15.21,15.355' fill='none' stroke='%23c61633' stroke-width='2'/%3E%3Cline id='Linie_8' x1='.65' y1='15.959' x2='42.076' y2='15.959' fill='none' stroke='%23c61633' stroke-width='2'/%3E%3C/svg%3E");
+      width: 2.5rem;
+      padding-top: 5px;
+    }
+  }
+  .vel--footer-item{
+    height: 3.75rem;
+    @include flex-rules(center, center, center, center, row);
+  }
+
+  .vel--footer-title{
+    @include media-breakpoint-up(xxl) {
+      @include flex-rules(flex-end, center, center, normal, row);
+    }
+  }
+  .is--disabled {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,16 @@
+- name: Beginner
+  icon: /assets/images/icons/n_beginner--xl--white.svg
+  info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  link: #
+- name: Advanced User
+  icon: /assets/images/icons/n_advanced-user--xl--white.svg
+  info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  link:  #
+- name: Teacher
+  icon: /assets/images/icons/n_teacher--xl--white.svg
+  info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  link: #
+- name: Executive
+  icon: /assets/images/icons/n_executive--xl--white.svg
+  info: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  link: #

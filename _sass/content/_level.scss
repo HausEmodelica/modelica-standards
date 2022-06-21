@@ -1,0 +1,19 @@
+.level {
+  .card {
+    .btn {
+      @include flex-rules(center, center, center, center, row);
+
+    }
+.ratio{
+  --bs-aspect-ratio: 33.333333%;
+}
+    .card-img-top {
+      width: auto;
+      .card-img-content{
+        @include flex-rules(center, center, center, normal, column);
+      }
+
+    }
+  }
+
+}

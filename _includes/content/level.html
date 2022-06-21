@@ -1,0 +1,40 @@
+<div class="row mb-5">
+    <div class="col-12 vel--title has--white-headline text-uppercase text-center">
+        <h2>What is your personal level?</h2>
+    </div>
+</div>
+<div class="row">
+    {% for item in site.data.level %}
+    <div class="col-12 col-md-6 mt-3 my-md-1">
+        <div class="card has--background-dark has--light-border h-100">
+
+            <div class="card-img-top mx-2 has--background-dark h-100">
+                <div class="row h-100">
+                    <div class="col-4 col-md-3 mx-auto card-img-content ratio">
+                        <figure>
+                            <picture>
+                                <source srcset="{{site.url}}{{item.icon}}">
+                                <img src="{{site.url}}{{item.icon}}" class="py-5 px-2 h-100" alt="">
+                            </picture>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body px-10 pb-5">
+                <div class="card-title has--white-headline text-center mb-2">
+                    <h4>{{item.name}}</h4>
+                </div>
+                <div class="card-text has--white-font mb-2">
+                    <p>{{item.info}}</p>
+                </div>
+                <button type="button" class="btn btn-primary text-uppercase has--white-font col-6 offset-3" data-bs-toggle="modal"
+                        data-bs-target="#{{item.modalId}}">More about {{item.name}}
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,27 @@
+header{
+  .vel--header-overlay{
+    @include media-breakpoint-up(md) {
+      margin-top: -10.56rem;
+    }
+    @include media-breakpoint-only(lg) {
+      margin-top: -20vw;
+    }
+    @include media-breakpoint-only(xl) {
+      margin-top: -20vw;
+    }
+    @include media-breakpoint-only(xxl) {
+      margin-top: -20vw;
+    }
+    @include media-breakpoint-only(xxxl) {
+      margin-top: -20vw;
+    }
+      margin-top: -25vw;
+    
+    .vel--title{
+      span{
+        font-weight: $font-weight-normal;
+        display: block;
+      }
+    }
+  }
+}

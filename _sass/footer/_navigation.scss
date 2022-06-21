@@ -1,0 +1,13 @@
+footer{
+  nav{
+    .nav-link{
+      font-size: $font-size-lg;
+      &:not(:nth-child(3))::after{
+        content: "|";
+        font-weight: $font-weight-bold;
+        padding-left: 5px;
+        padding-right:5px;
+      }
+    }
+  }
+}

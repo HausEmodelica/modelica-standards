@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-12 vel--title has--red-headline text-center mb-5">
+        <h2>Tools & Help</h2>
+    </div>
+</div>
+<div class="row">
+    {% for item in site.data.tools %}
+    <div class="col-12 col-sm-6 col-xxl-3 my-1 my-xxl-0">
+        <div class="card vel--service-card has--lightred-border px-5 py-6 h-100">
+            <div class="card-img-top h-100">
+                <div class="row">
+                <div class="col-4 col-lg-6 col-xxl-4 mb-2 mx-auto">
+                    <figure>
+                        <picture>
+                            <source srcset="{{site.url}}{{item.icon}}">
+                            <img src="{{site.url}}{{item.icon}}" alt="">
+                        </picture>
+                    </figure>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-12 vel--item-title text-center my-2">
+                    <h3>{{item.title}}</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 vel--info">
+                    <p class="card-text">{{item.info}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 vel--link d-grid">
+                    <a href="{{item.link}}" class="btn text-center text-decoration-underline">More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+</div>

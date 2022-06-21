@@ -1,0 +1,19 @@
+.benefits {
+  .vel--quotes-text {
+    @include flex-rules(center, normal, normal, normal, column);
+  }
+
+  .vel--quotes-image{
+    position: relative;
+    figure::after {
+      position: absolute;
+      top:3rem;
+      right: 0;
+      width: 3rem;
+      content: url("https://c-papabechtelou.github.io/first-template/assets/images/icons/n_quotemark--white.svg");
+    }
+  }
+  .vel--use-cases{
+      @include flex-rules(center, normal, normal, normal, row);
+  }
+}
