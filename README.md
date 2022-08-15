@@ -1,1 +1,1 @@
-# second-template
+# standards-template
