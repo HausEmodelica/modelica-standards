@@ -25,10 +25,24 @@
         </button>
         <div class="collapse navbar-collapse ms-lg-6 ms-xxl-8 ms-xxxl-10 my-auto" id="navbarNav">
             <ul class="navbar-nav mt-7 mb-1 mb-lg-0 mt-lg-0 ">
-                {% for item in site.data.navigation %}
-                <li class="nav-item mb-4 mb-lg-0 me-3 me-lg-5">
-                    <a class="nav-link p-0 {% if page.url == item.link %}is--active{% endif %}"
-                       href="{{  item.link  | relative_url }}">{{ item.name }}</a>
+                {% for mainItem in site.data.navigation %}
+                {% assign mainItemUrl = mainItem.url | remove: '/' %}
+                {% assign children = site.pages | where_exp: "p", "p.parent == mainItemUrl" %}
+                <li class="nav-item mb-4 mb-lg-0 me-3 me-lg-5{% if page.url contains mainItemUrl %} active{% endif %}">
+                    <a class="nav-link p-0 {% if page.url == mainItem.url %}is--active{% endif %}"
+                       href="{{  mainItem.url  | relative_url }}">{{ mainItem.name }}</a>
+
+                    {% if children.size > 0 %}
+                    <ul class="dropdown-menu">
+                        <span class="dropdown-toggle d-xl-none" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        {% for childNode in children %}
+                        {% assign childNodeUrl = childNode.name | replace: ".md", "" %}
+                        <li class="{% if page.url contains childNodeUrl %}active{% endif %}">
+                            <a class="dropdown-item" href="{{  childNode.url | relative_url }}">{{childNode.title}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
                 </li>
                 {% endfor %}
             </ul>

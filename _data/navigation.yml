@@ -1,14 +1,14 @@
 - name: Introduction
-  link: /
+  url: /
 - name: Tools
-  link: #
+  url: /tools/
 - name: Help
-  link: #
+  url: #
 - name: Publications
-  link: #
+  url: #
 - name: Downloads
-  link: #
+  url: #
 - name: News and Events
-  link: #
+  url: #
 - name: About
-  link: #
+  url: #
