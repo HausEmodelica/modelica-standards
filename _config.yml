@@ -6,6 +6,8 @@ collections:
     output: true
   releases:
     output: true
+  footer_pages:
+    output: true
 
 
 
