@@ -1,5 +1,5 @@
 url: https://hausemodelica.github.io/modelica-standards
-
+baseurl: /modelica-standards
 
 collections:
   events:

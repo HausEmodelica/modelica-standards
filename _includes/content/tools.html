@@ -12,8 +12,8 @@
                 <div class="col-4 col-lg-6 col-xxl-4 mb-2 mx-auto">
                     <figure>
                         <picture>
-                            <source srcset="{{site.url}}{{item.icon}}">
-                            <img src="{{site.url}}{{item.icon}}" alt="">
+                            <source srcset="{{ item.icon | relative_url }}">
+                            <img src="{{ item.icon | relative_url }}" alt="">
                         </picture>
                     </figure>
                 </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="row">
                 <div class="col-12 vel--link d-grid">
-                    <a href="{{item.link}}" class="btn text-center text-decoration-underline">More</a>
+                    <a href="{{ item.link | relative_url }}" class="btn text-center text-decoration-underline">More</a>
                 </div>
             </div>
 

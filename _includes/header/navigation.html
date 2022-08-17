@@ -3,7 +3,7 @@
             <div class="col-12">
                 <figure>
                     <picture>
-                        <source srcset="{{site.url}}/assets/images/logos/n_efmi-std--color.svg">
+                        <source srcset="{{ '/assets/images/logos/n_efmi-std--color.svg' | relative_url }}">
                         <img src="{{ site.url }}/assets/images/logos/n_efmi-std--color.svg"/>
                     </picture>
                 </figure>
@@ -17,8 +17,8 @@
             <span class="navbar-toggler-icon">
                 <figure>
                     <picture>
-                        <source srcset="{{site.url}}/assets/images/toggle-icon.svg">
-                        <img src="{{site.url}}/assets/images/toggle-icon.svg">
+                        <source srcset="{{ '/assets/images/toggle-icon.svg' | relative_url }}">
+                        <img src="{{ '/assets/images/toggle-icon.svg' | relative_url }}">
                     </picture>
                 </figure>
             </span>
@@ -28,7 +28,7 @@
                 {% for item in site.data.navigation %}
                 <li class="nav-item mb-4 mb-lg-0 me-3 me-lg-5">
                     <a class="nav-link p-0 {% if page.url == item.link %}is--active{% endif %}"
-                       href="{{site.url}}{{ item.link }}">{{ item.name }}</a>
+                       href="{{  item.link  | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
             </ul>

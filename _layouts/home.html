@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="https://use.typekit.net/jqt8mfo.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
     {% feed_meta %}
     {% seo %}
     {% if jekyll.environment == "production" %}
     <script src="my-analytics-script.js"></script>
     {% endif %}
-    <script src="{{site.url}}/assets/js/bootstrap/bootstrap.bundle.js"></script>
-    <script src="{{site.url}}/assets/js/main.js"></script>
+    <script src="{{ '/assets/js/bootstrap/bootstrap.bundle.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </head>
 <body>
 <header>

@@ -13,8 +13,8 @@
                     <div class="col-4 col-md-3 mx-auto card-img-content ratio">
                         <figure>
                             <picture>
-                                <source srcset="{{site.url}}{{item.icon}}">
-                                <img src="{{site.url}}{{item.icon}}" class="py-5 px-2 h-100" alt="">
+                                <source srcset="{{ item.icon | relative_url }}">
+                                <img src="{{ item.icon | relative_url }}" class="py-5 px-2 h-100" alt="">
                             </picture>
                         </figure>
                     </div>

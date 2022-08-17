@@ -16,7 +16,7 @@
             </div>
             <div class="row">
                 <div class="col-12 vel--link">
-                    <a href="{{item.link}}" class="btn text-decoration-underline">More about our benefits</a>
+                    <a href="{{ item.link | relative_url }}" class="btn text-decoration-underline">More about our benefits</a>
                 </div>
             </div>
         </div>
@@ -27,8 +27,8 @@
             <div class="col-8 offset-2 offset-md-2 offset-lg-0 col-md-4 col-xxl-3 ps-xxl-5 vel--quotes-image me-2">
                 <figure>
                     <picture>
-                        <source srcset="{{site.url}}/assets/images/images/example-quote-person-a--223x223.jpg">
-                        <img src="{{site.url}}/assets/images/images/example-quote-person-a--223x223.jpg" class="rounded-circle">
+                        <source srcset="{{ '/assets/images/images/example-quote-person-a--223x223.jpg' | relative_url }}">
+                        <img src="{{ '/assets/images/images/example-quote-person-a--223x223.jpg' | relative_url }}" class="rounded-circle">
                     </picture>
                 </figure>
             </div>
@@ -43,8 +43,8 @@
             <div class="col-8 offset-2 col-md-4 col-xxl-3 offset-md-0 offset-lg-1 offset-xxl-0 vel--quotes-image ps-xxl-5 me-1">
                 <figure>
                     <picture>
-                        <source srcset="{{site.url}}/assets/images/images/example-quote-person-b--223x223.jpg">
-                        <img src="{{site.url}}/assets/images/images/example-quote-person-b--223x223.jpg" class="rounded-circle">
+                        <source srcset="{{ '/assets/images/images/example-quote-person-b--223x223.jpg' | relative_url }}">
+                        <img src="{{ '/assets/images/images/example-quote-person-b--223x223.jpg' | relative_url }}" class="rounded-circle">
                     </picture>
                 </figure>
             </div>
@@ -66,7 +66,7 @@
             <div class="card-title text-center mb-2"><h3>{{item.title}}</h3></div>
             <div class="card-text mb-2"><p>{{item.info}}</p></div>
             <div class="col-12 vel--link mt-1">
-                <a class="btn text-decoration-underline has--white-font" href="{{item.link}}">Read more</a>
+                <a class="btn text-decoration-underline has--white-font" href="{{ item.link | relative_url }}">Read more</a>
             </div>
         </div>
     </div>
