@@ -29,9 +29,12 @@ class IntroTag < Liquid::Tag
     end
 
     if( !text.nil? && !text.empty? )
+        text = Liquid::Template.parse(text).render(context)
         output =  "<div class=\"vel--intro\">"
         output += "<p>#{text}</p>"
         if( !link.nil? && !link.empty? )
+          link = Liquid::Template.parse(link).render(context)
+          linktitle = Liquid::Template.parse(linktitle).render(context)
           output += "<a href=\"#{link}\" title=\"#{linktitle}\">#{linktitle}</a>"
         end
         output += "</div>"

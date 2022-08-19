@@ -1,7 +1,7 @@
 ---
 title: Tool Example 2
 layout: default-content
-url: tool-example-1
+url: tool-example-2
 parent: tools
 order: 2
 ---
