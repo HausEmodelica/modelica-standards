@@ -1,7 +1,7 @@
 ---
 title: Tools
-layout: home
+layout: default-content
 url: tools
 ---
 
-Tools Headline
+# Tools Headline

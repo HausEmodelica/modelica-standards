@@ -1,0 +1,65 @@
+<header>
+    <div class="row pt-2">
+        <div class="col-2 offset-9">
+            <div class="row">
+                <div class="col-2 offset-2 p-0">
+                    <figure>
+                        <picture>
+                            <source srcset="{{ '/assets/images/logos/n_modelica-bildmarke--color.svg' | relative_url }}">
+                            <img src="{{ '/assets/images/logos/n_modelica-bildmarke--color.svg' | relative_url }}" class="w-75">
+                        </picture>
+                    </figure>
+    
+                </div>
+                <div class="col-8 p-0">
+                    <a href="#" class="has--lightgrey-font">go to modelica.org</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg is--container-medium vel--mainnav">
+        <div class="container">
+            <a class="navbar-brand me-lg-6 me-xxl-8 me-xxxl-10 ms-2 mb-3 col-3 col-lg-auto" href="#">
+                <figure>
+                    <picture>
+                        <source srcset="{{ '/assets/images/logos/n_efmi-std--color.svg' | relative_url }}">
+                        <img src="{{ site.url }}/assets/images/logos/n_efmi-std--color.svg"/>
+                    </picture>
+                </figure>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <figure>
+                        <picture>
+                            <img src="{{ '/assets/images/toggle-icon.svg' | relative_url }}">
+                        </picture>
+                    </figure>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse ms-lg-6 ms-xxl-8 ms-xxxl-10 my-auto" id="navbarNav">
+                <ul class="navbar-nav mt-7 mb-1 mb-lg-0 mt-lg-0 ">
+                    {% for mainItem in site.data.mainnavigation %}
+                    {% assign mainItemUrl = mainItem.url | remove: '/' %}
+                    {% assign children = site.pages | where_exp: "p", "p.parent == mainItemUrl" %}
+                    <li class="nav-item mb-4 mb-lg-0 me-3 me-lg-5{% if page.url contains mainItemUrl %} active{% endif %}">
+                        <a class="nav-link p-0 {% if page.url == mainItem.url %}is--active{% endif %}"
+                            href="{{  mainItem.url  | relative_url }}">{{ mainItem.name }}</a>
+
+                        {% if children.size > 0 %}
+                        <ul class="dropdown-menu">
+                            <span class="dropdown-toggle d-xl-none" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                            {% for childNode in children %}
+                            {% assign childNodeUrl = childNode.name | replace: ".md", "" %}
+                            <li class="{% if page.url contains childNodeUrl %}active{% endif %}">
+                                <a class="dropdown-item" href="{{  childNode.url | relative_url }}">{{childNode.title}}</a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

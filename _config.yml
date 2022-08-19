@@ -15,7 +15,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "home"
+      layout: "default-content"
 
 plugins:
   - jekyll-feed

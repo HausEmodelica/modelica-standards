@@ -1,40 +1,17 @@
-<div class="row mx-0">
-    <div class="col-12 header-image p-0">
-        <figure>
-            <picture>
-                <source srcset="{{ '/assets/images/images/example-header-1920x584.jpg' | relative_url }}"
-                        media="(min-width: 992px)">
-                <source srcset="{{ '/assets/images/images/example-header-820x584.jpg' | relative_url }}"
-                        media="(min-width: 768px)">
-                <source srcset="{{ '/assets/images/images/example-header-375x584.jpg' | relative_url }}"
-                        media="(max-width: 767px)">
-                <img src="{{ '/assets/images/images/example-header-1920x584.jpg' | relative_url }}">
-            </picture>
-        </figure>
-        <div class="row has--background-light mx-0 px-1 px-md-4 px-lg-0">
-            <div class="col-12 col-lg-8 offset-lg-2 vel--header-overlay has--background-white py-5 ps-5 pe-9" id="overlay">
-                <div class="col-12 vel--overlay-headline">
-                    <div class="row">
-                        <div class="col-12 vel--title m-0">
-
-                            <h2>Bringing FMUs
-                                <span>onto embedded devices.</span></h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 vel--overlay-info pt-1">
-                        <p>EMPHYSIS (Embedded systems with physical models in the production code software) is an ITEA3
-                            research project that is running Sept. 2017 - Feb. 2021. The major goal of the EMPHYSIS
-                            project is to develop a new standard eFMI (FMI for embedded systems) to exchange
-                            physics-based models between modelling and simulation environments with software development
-                            environments for electronic control units (ECU), micro controllers or other embedded systems
-                            and provide prototype implementations for the whole tool chain from physics-based modeling
-                            environments to production code on electronic control units.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{page.title}}</title>
+        <link rel="stylesheet" href="https://use.typekit.net/jqt8mfo.css">
+        <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+        {% feed_meta %}
+        {% seo %}
+        {% if jekyll.environment == "production" %}
+        <script src="my-analytics-script.js"></script>
+        {% endif %}
+        <script src="{{ '/assets/js/bootstrap/bootstrap.bundle.js' | relative_url }}"></script>
+        <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    </head>
+    <body>

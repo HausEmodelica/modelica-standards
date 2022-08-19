@@ -1,0 +1,14 @@
+- name: Introduction
+  url: /introduction/
+- name: Tools
+  url: /tools/
+- name: Help
+  url: /help/
+- name: Publications
+  url: /publications/
+- name: Downloads
+  url: /downloads/
+- name: News and Events
+  url: /news-and-events/
+- name: About
+  url: /about/

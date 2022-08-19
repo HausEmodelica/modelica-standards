@@ -1,6 +1,6 @@
 ---
 title: Tool Example 2
-layout: home
+layout: default-content
 url: tool-example-1
 parent: tools
 order: 2

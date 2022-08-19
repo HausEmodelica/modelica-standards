@@ -1,0 +1,47 @@
+{%
+    include header/header.html
+%}
+
+{%
+    include header/mainnavigation.html
+%}
+
+<div class="row mx-0">
+    <div class="col-12 header-image p-0">
+        <figure>
+            <picture>
+                <source srcset="{{ '/assets/images/images/example-header-1920x584.jpg' | relative_url }}"
+                        media="(min-width: 992px)">
+                <source srcset="{{ '/assets/images/images/example-header-820x584.jpg' | relative_url }}"
+                        media="(min-width: 768px)">
+                <source srcset="{{ '/assets/images/images/example-header-375x584.jpg' | relative_url }}"
+                        media="(max-width: 767px)">
+                <img src="{{ '/assets/images/images/example-header-1920x584.jpg' | relative_url }}">
+            </picture>
+        </figure>
+        <div class="row has--background-light mx-0 px-1 px-md-4 px-lg-0">
+            <div class="col-12 col-lg-8 offset-lg-2 vel--header-overlay has--background-white py-5 ps-5 pe-9" id="overlay">
+                <div class="col-12 vel--overlay-headline">
+                    <div class="row">
+                        <div class="col-12 vel--title m-0">
+                            <h1 class="h2">
+                                {{page.headline1}}
+                                <span>{{page.headline2}}</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 vel--overlay-info pt-1">
+                        {{content}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%
+    include footer/footer.html
+%}
